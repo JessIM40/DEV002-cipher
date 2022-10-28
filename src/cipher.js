@@ -12,6 +12,8 @@ const cipher = {
 
   // Mostrar resultado
   // Limpiar texto de textarea
+
+
 };
 
 export default cipher;
