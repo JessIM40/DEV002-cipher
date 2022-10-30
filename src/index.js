@@ -6,7 +6,7 @@ btnEncrypt.addEventListener("click", encryptText);
 
 function encryptText() {
     // Obtener el VALOR del input (clave)
-    let keyEncrypt = document.getElementById("key").value;
+    let keyEncrypt = parseInt(document.getElementById("key").value);
     
     // Obtener el VALOR del elemento textarea desde html para trabajarlo en js
     let txtToCipher = document.getElementById("textToEncrypt").value;
