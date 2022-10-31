@@ -42,11 +42,15 @@ body {
 }
 .containerTextToEncrypt {
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
+    
 }
-textarea {
+.containerTextToEncrypt textarea {
     background: transparent;
     border: none;
+    /* width: inherit;
+    height:inherit; */
+
     /* tamaño del contenedor */
     /* sin borde al seleccionar */
 }
