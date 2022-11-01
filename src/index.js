@@ -1,5 +1,5 @@
 import cipher from './cipher.js';
-// PARA ENCRIPTAR
+
 // Obtener el elemento input (clave)
 let key = document.getElementById("key");
 // Obtener el elemento textarea
@@ -32,11 +32,6 @@ function checkChar(e) {
         e.preventDefault()
     }
 }
-
-// let btnActive = {
-//     encrypt: false;
-//     decrypt: false;
-// }
 
 function solveText(e) {
     // Obtener el VALOR de la clave, y usar parseInt para cambiar de string a number
