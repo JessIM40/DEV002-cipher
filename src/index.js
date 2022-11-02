@@ -25,19 +25,28 @@ btnDecrypt.addEventListener("click", solveText);
 
 // String con los caracteres permitidos, incluye espacio
 // let charAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ {Backspace}";
-
+// let allowedTo;
 // function checkChar(e) {
 //     if(charAllowed.includes(e.key)){
+//         allowedTo = true;
+//         console.log(e.key);
+//         console.log(allowedTo);
 //     } else {
 //         e.preventDefault()
-//         alert("Solo alfabeto en MAYUSCULAS sin Ñ");
+//         alert("Usar solo letras en MAYUSCULAS (sin Ñ): \nA B C D E G H I J K L M N O P Q R S T U V W X Y Z");
+//         allowedTo = false;
+//         console.log(allowedTo);
 //     }
+//     return allowedTo;
 // }
+// console.log(allowedTo);
 
+
+// console.log(allowedTo);
 function solveText(e) {
     // Obtener el VALOR de la clave, y usar parseInt para cambiar de string a number
     key = parseInt(key.value);
-    // Obtener el VALOR del elemento textarea 
+    // Obtener el VALOR del elemento textarea
     textUser = textUser.value;
     let textResult;
     if(e.target.id == "btnEncrypt") {
