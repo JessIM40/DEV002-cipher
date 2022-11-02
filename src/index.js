@@ -5,7 +5,7 @@ let key = document.getElementById("key");
 // Obtener el elemento textarea
 let textUser = document.getElementById("textToEncrypt");
 // Agregar escuchador al textarea
-textUser.addEventListener("keydown", checkChar);
+// textUser.addEventListener("keydown", checkChar);
 // Agregar escuchador al textarea
 // textToCipher.addEventListener("input", detectChanges)
 // Obtener el elemento p (resultado)
@@ -24,14 +24,15 @@ btnDecrypt.addEventListener("click", solveText);
 
 
 // String con los caracteres permitidos, incluye espacio
-let charAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ {Backspace}";
+// let charAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ {Backspace}";
 
-function checkChar(e) {
-    if(charAllowed.includes(e.key)){
-    } else {
-        e.preventDefault()
-    }
-}
+// function checkChar(e) {
+//     if(charAllowed.includes(e.key)){
+//     } else {
+//         e.preventDefault()
+//         alert("Solo alfabeto en MAYUSCULAS sin Ñ");
+//     }
+// }
 
 function solveText(e) {
     // Obtener el VALOR de la clave, y usar parseInt para cambiar de string a number
