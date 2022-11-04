@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kranky&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">CRIPTOGRAFIANDO</h1>
+    </header>
+    <main>
+      <!-- Explicacion de uso de la aplicación web -->
+      <section>
+        <div class="containerDescription">
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsum officia optio deserunt laboriosam autem sint labore dicta assumenda, debitis, fugit velit asperiores reiciendis magni reprehenderit repellat consequuntur ipsa provident.</p>
+        </div>
+      </section>
+      <!-- Area de cifrado/descifrado de texto -->
+      <section class="encrypt-decrypt">
+        <!-- Clave centrada -->
+        <!-- <form> -->
+        <div class="containerKey">
+          <label class="labelKey">CLAVE: <input id="key" type="number"></label>
+        </div>
+        <div class="containerTextEncryptDecrypt">
+          <!-- Area para encriptar y desencriptar -->
+          <div class="areaToEncrypt">
+            <div class="containerTextToEncrypt">
+              <label for="textToEncrypt">Ingrese texto a cifrar/descifrar: </label>
+              <textarea name="toEncrypt" id="textToEncrypt" cols="30" rows="10"></textarea>              
+            </div>
+            <div class="containerButtons">
+              <button id="btnEncrypt">Cifrar</button>
+              <button id="btnDecrypt">Descifrar</button>
+            </div>
+          </div>
+          <!-- Area para mostrar resultado -->
+          <div class="areaShowResult">
+            <p id="result"></p>
+          </div>
+        </div>
+        <!-- Area boton Limpiar -->
+        <div class="containerBtnClean">
+          <button id="btnClean">Limpiar</button>
+        </div>
+        <!-- </form> -->
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+      </div>
+    </footer>
+    <!-- <div id="root">
+      <h1>Hello world!</h1>
+    </div> -->
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: rgba(216, 244, 133, 0.63);
+}
+
+#title {
+    font-family: 'Kranky', cursive;
+    text-align: center; /* centra el texto respecto de la pagina*/
+}
+
+.containerDescription {
+    background-color: rgba(217, 217, 217, 0.26);
+    width: 60%;
+    padding: 5px 30px;
+    margin: auto; /* Centra el div respecto a la pagina*/
+}
+.description {
+    text-align: justify;
+}
+
+.containerKey, .containerBtnClean {
+    width: 30%;
+    margin: 0 auto; /*Centra el div respecto de la pantalla*/
+    text-align: center; /*Centra los elementos dentro del div*/
+}
+#key {
+    width:30px;
+    background-color: rgba(217, 217, 217, 0.26);
+}
+
+.containerTextEncryptDecrypt {
+    display: flex; /* Ordena a los elementos hijxs en eje principal por defecto (horizontal), es decir unx al lado de otrx */
+    justify-content: space-around; /* Distribuye al contenido (elementos hijxs) con espacio ALREDEDOR de cada unx de ellxs */
+}
+
+.areaToEncrypt, .areaShowResult {
+    background-color: rgba(217, 217, 217, 0.26);
+    width: 45%;
+    height: 300px;
+    display: flex; /* Ordena su contenido en el eje principal por defecto (horizontalmente) */
+    flex-direction: column; /* Cambia direccion del eje principal, de horizontal a vertical*/
+    justify-content: space-between; /* Distribuye al contenido (elementos hijxs) con espacio ENTRE ellxs*/
+}
+.containerTextToEncrypt {
+    display: flex; 
+    flex-direction: column;
+    
+}
+.containerTextToEncrypt textarea {
+    background: transparent;
+    border: none;
+    /* width: inherit;
+    height:inherit; */
+
+    /* tamaño del contenedor */
+    /* sin borde al seleccionar */
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye al contenido (elementos hijxs) con espacio IGUAL entre ellxs y los márgenes (izq y der)*/
+}
+
+
+
+
+
+
+
+
+
+
+
