@@ -24,25 +24,26 @@ btnDecrypt.addEventListener("click", solveText);
 
 
 // String con los caracteres permitidos, incluye espacio
-// let charAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ {Backspace}";
+// let letterAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// let charAllowed =" "
+
 // let allowedTo;
 // function checkChar(e) {
-//     if(charAllowed.includes(e.key)){
+//     if(letterAllowed.includes(e.key)){
 //         allowedTo = true;
 //         console.log(e.key);
 //         console.log(allowedTo);
 //     } else {
 //         e.preventDefault()
-//         alert("Usar solo letras en MAYUSCULAS (sin Ñ): \nA B C D E G H I J K L M N O P Q R S T U V W X Y Z");
+//         console.log("Usar solo letras en MAYUSCULAS (sin Ñ): \nA B C D E G H I J K L M N O P Q R S T U V W X Y Z");
 //         allowedTo = false;
 //         console.log(allowedTo);
 //     }
-//     return allowedTo;
+//     return console.log(allowedTo);
 // }
-// console.log(allowedTo);
 
 
-// console.log(allowedTo);
+
 function solveText(e) {
     // Obtener el VALOR de la clave, y usar parseInt para cambiar de string a number
     key = parseInt(key.value);
