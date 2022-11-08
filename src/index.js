@@ -18,6 +18,10 @@ btnEncrypt.addEventListener("click", solveText);
 let btnDecrypt = document.getElementById("btnDecrypt");
 // Agregar un escuchador de eventos al boton para que ejecute una accion (mediante una funcion )
 btnDecrypt.addEventListener("click", solveText);
+// Obtener button Clean
+let btnClean = document.getElementById("btnClean");
+btnClean.addEventListener("click", cleanInput);
+
 
 
 // String con los caracteres permitidos, incluye espacio
@@ -51,3 +55,8 @@ function solveText(e) {
     containerTxtResult.innerHTML = textResult;
 }
 
+function cleanInput(){
+    document.getElementById("textToEncrypt").value = "";
+    document.getElementById("key").value = "";
+    containerTxtResult.innerHTML = "";
+}
