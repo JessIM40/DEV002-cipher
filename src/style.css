@@ -1,17 +1,28 @@
+*{
+    margin: 20px, 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: rgba(216, 244, 133, 0.63);
+    margin: 0;
+    border: 1px solid red;
+    background-color: #074F57;
+    height: 100vw;
 }
 
 #title {
     font-family: 'Kranky', cursive;
     text-align: center; /* centra el texto respecto de la pagina*/
+    color: #9ece9a;
+    font-size: 45px;
 }
 
 .containerDescription {
-    background-color: rgba(217, 217, 217, 0.26);
+    background-color: #E4C5AF;
     width: 60%;
     padding: 5px 30px;
     margin: auto; /* Centra el div respecto a la pagina*/
+    margin-bottom: 20px;
 }
 .description {
     text-align: justify;
@@ -21,10 +32,19 @@ body {
     width: 30%;
     margin: 0 auto; /*Centra el div respecto de la pantalla*/
     text-align: center; /*Centra los elementos dentro del div*/
+    margin-bottom: 10px;
+}
+.labelKey{
+    color: #9ece9a;
+    font-size: 20px;
 }
 #key {
-    width:30px;
+    width:50px;
+    height: 25px;
     background-color: rgba(217, 217, 217, 0.26);
+    font-size: 20px;
+    text-align: center;
+    color:#9ece9a;
 }
 
 .containerTextEncryptDecrypt {
@@ -33,7 +53,7 @@ body {
 }
 
 .areaToEncrypt, .areaShowResult {
-    background-color: rgba(217, 217, 217, 0.26);
+    background-color: #E4C5AF;
     width: 45%;
     height: 300px;
     display: flex; /* Ordena su contenido en el eje principal por defecto (horizontalmente) */
@@ -41,20 +61,46 @@ body {
     justify-content: space-between; /* Distribuye al contenido (elementos hijxs) con espacio ENTRE ellxs*/
 }
 .containerTextToEncrypt {
+    /* border: 1px solid brown; */
     display: flex; 
     flex-direction: column;
-    
+    font-size: 20px;
+    padding:5px;
 }
+
 .containerTextToEncrypt textarea {
     background: transparent;
     border: none;
+    font-size: 15px;
 }
 
 .containerButtons {
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-evenly; /* Distribuye al contenido (elementos hijxs) con espacio IGUAL entre ellxs y los márgenes (izq y der)*/
+    justify-content:space-around; /*Distribuye al contenido (elementos hijxs) con espacio IGUAL entre ellxs y los márgenes (izq y der)*/
+}
+.btnEn-De{
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
 }
 
+.containerBtnClean{
+    margin-right: 0;
+}
+button{
+    width: 80px;
+    height: 35px;
+    background-color: #074F57;
+    color: white;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: black;
+    height: 50px;
+    /* margin-bottom: 0; */
+}
 
 
 
