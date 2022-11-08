@@ -56,7 +56,5 @@ function solveText(e) {
 }
 
 function cleanInput(){
-    document.getElementById("textToEncrypt").value = "";
-    document.getElementById("key").value = "";
-    containerTxtResult.innerHTML = "";
+    location.reload();
 }
