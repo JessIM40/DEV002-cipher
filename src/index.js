@@ -29,7 +29,7 @@ let letterAllowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // Verifica si la letra presionada esta dentro del string letterAllowed
 function checkChar(e) {
     if(e.key === 'Backspace') return; // Permite uso de Backspace
-    if(e.key === ' ') return; // Permite uso de espacio
+    if(e.key === ' ') return ; // Permite uso de espacio
     if(letterAllowed.includes(e.key)){
         return;
     } else {
