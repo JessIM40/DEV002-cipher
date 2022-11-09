@@ -16,47 +16,46 @@
       <!-- Explicacion de uso de la aplicación web -->
       <section>
         <div class="containerDescription">
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsum officia optio deserunt laboriosam autem sint labore dicta assumenda, debitis, fugit velit asperiores reiciendis magni reprehenderit repellat consequuntur ipsa provident.</p>
+          <p class="description italics">TEXTO CIFRADO, cualquier texto que desees compartir via correo, whatsapp, u otro medio escrito, sin que nadie lo pueda leer, mas que tú y quién tenga la clave.</p>
+          <p class="description">Cifra tu texto en 3 pasos:</p>
+          <ul>
+            <li>Elige un número como CLAVE</li>
+            <li>Escribe tu texto</li>
+            <li>Y dale clic en el boton "Cifrar"</li>
+          </ul>
         </div>
       </section>
       <!-- Area de cifrado/descifrado de texto -->
       <section class="encrypt-decrypt">
-        <!-- Clave centrada -->
-        <!-- <form> -->
-        <div class="containerKey">
-          <label class="labelKey">CLAVE: <input id="key" type="number"></label>
-        </div>
-        <div class="containerTextEncryptDecrypt">
-          <!-- Area para encriptar y desencriptar -->
-          <div class="areaToEncrypt">
-            <div class="containerTextToEncrypt">
-              <label for="textToEncrypt">Ingrese texto a cifrar/descifrar: </label>
-              <textarea name="toEncrypt" id="textToEncrypt" cols="30" rows="10"></textarea>              
-            </div>
-            <div class="containerButtons">
-              <button id="btnEncrypt">Cifrar</button>
-              <button id="btnDecrypt">Descifrar</button>
-            </div>
+          <!-- Clave centrada -->
+          <div class="containerKey">
+            <label class="labelKey">CLAVE: <input id="key" type="number"></label>
           </div>
-          <!-- Area para mostrar resultado -->
-          <div class="areaShowResult">
-            <p id="result"></p>
-          </div>
-        </div>
-        <!-- Area boton Limpiar -->
-        <div class="containerBtnClean">
-          <button id="btnClean">Limpiar</button>
-        </div>
-        <!-- </form> -->
+          <div class="containerTextEncryptDecrypt">
+            <!-- Area para encriptar y desencriptar -->
+            <div class="areaToEncrypt">
+              <div class="containerTextToEncrypt">
+                <label for="textToEncrypt">Ingrese texto a cifrar/descifrar: </label>
+                <textarea name="toEncrypt" id="textToEncrypt" cols="30" rows="10"></textarea>              
+              </div>
+              <div class="containerButtons">
+                <div class="btnEn-De">
+                  <button id="btnEncrypt">Cifrar</button>
+                  <button id="btnDecrypt">Descifrar</button>
+                </div>
+                <!-- Area boton Limpiar -->
+                <div class="containerBtnClean">
+                  <input type="reset" value="Limpiar" id="btnClean">
+                </div>
+              </div>
+            </div>
+            <!-- Area para mostrar resultado -->
+            <div class="areaShowResult">
+              <p id="result"></p>
+            </div>
+          </div>        
       </section>
     </main>
-    <footer>
-      <div class="footer">
-      </div>
-    </footer>
-    <!-- <div id="root">
-      <h1>Hello world!</h1>
-    </div> -->
     <script src="index.js" type="module"></script>
   </body>
 </html>
